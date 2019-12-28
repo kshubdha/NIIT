@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html  lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <title>Shweta Project</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap 4.0 CDN   -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- Insert Angular Supportive JS  -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+  <!-- Insert Socket JS  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+  <!-- Style for User Interface -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Required Module  -->
+  <script>
+    var app = angular.module("niitTest", []);
+    </script>
+    <!-- JS for Services -->
+    <script src="./js/services.js"></script>
+   <!-- JS to search image -->
+    <script src="./components/search-image-component/search-image.js"></script>
+   <!-- JS to upload image -->
+    <script src="./components/upload-image-component/upload-image.js"></script>
+</head>
+<body class="bg-body-line-clr" ng-app="niitTest">
+<!-- Search Image Component -->
+<search-image></search-image> 
+<!-- Upload Image Component -->
+<upload-image></upload-image>     
+</body>
+</html>

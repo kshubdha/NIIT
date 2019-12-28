@@ -1,0 +1,28 @@
+<!-- Top Navigation Bar -->
+<nav class="navbar fixed-top navbar-dark bg-dark">   
+<!-- Search Form -->
+    <form class="form-inline">
+      <input class="form-control mr-sm-2" type="search" ng-model="keyword" placeholder="Search Photoes" aria-label="Search">
+      <button type="submit" class="btn btn-primary ml-3 btn-wide-angel mbl-mrgn-sttngs">Find</button> <span class="txt-clr-header ml-3">Photos of <i>{{keyword}}</i></span>
+    </form>
+<!-- Buttons Group to filter images -->
+    <div class="btn-group btn-group-toggle mbl-mrgn-bttnsso" data-toggle="buttons">
+        <label class="btn btn-secondary" ng-class="{active: imageSize == 200}">
+          <input type="radio" name="options" id="option1" ng-model="imageSize" value="200"> Small
+        </label>
+        <label class="btn btn-secondary" ng-class="{active: imageSize == 300}">
+          <input type="radio" name="options" id="option2" ng-model="imageSize" value="300"> Large    
+        </label>
+      </div>
+      
+  </nav>
+
+
+    <div class="container">
+        <div class="row no-gutters mt-4-oneso"> 
+          <!-- Display images     -->
+            <div class="col-sm-4 ctm-col-sttng" ng-repeat="image in imageList | filter:{'title':keyword} "><img ng-src="{{image.source}}" width="{{imageSize}}"><p class="img-bttm-txt">{{image.title}}</p> </div>
+            </div>
+      </div> 
+            </div>
+          </div>
