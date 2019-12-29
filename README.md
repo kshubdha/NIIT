@@ -3,6 +3,10 @@
 - Image Upload & Search using Socket.io with PHP & NodeJS.
 - Display images small and large using respective buttons
 
+## Screenshot
+
+![Image of AngularJS](https://res.cloudinary.com/dlej4bvtv/image/upload/v1577610158/niit-project_phcb5w.png)
+
 
 ## Installation
 
